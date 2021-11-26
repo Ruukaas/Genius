@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background-color:#C1D8FC;
+    text-align: center;
+}
+
+#title {
+    margin-top: 20px;
+    font-size: 60px;
+    color: #fd852f;
+    font-weight: bolder;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 8px;
+    display:inline-block;
+    margin-bottom: 0;
+}
+.main-game {
+    display:grid;
+    grid-template-columns: 10% 80% 10%;
+    
+}
+
+
+#start {
+    border : 1px solid black;
+    border-radius: 15px;
+    background-color:rgb(56, 55, 55);
+    grid-column-start: 1;
+    font-size: 40px;
+    align-self: center;
+    justify-self: center;
+    color:#f8954e
+
+}
+
+#pontos {
+    grid-column-start: 3;
+    font-size: 80px;
+    justify-self: center;
+    align-self: center;
+    color:red;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 8px;
+    background-color: white;
+}
+
+.genius {
+    grid-column-start: 2;
+    display:grid;
+    grid-template-areas: 'verde vermelho' 'amarelo azul';
+    grid-gap: 30px;
+    
+    background-color: black;
+    border-radius: 100%;
+    width: 700px;
+    height:700px;
+    align-self: center;
+    justify-self: center;
+    border: 30px solid black;
+}
+
+#blue {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+#red {
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+
+}
+#yellow {
+    grid-area: amarelo;
+    background-color:yellow;
+    border-bottom-left-radius: 100%;
+}
+
+#green {
+    grid-area: verde;
+    background-color:green;
+    border-top-left-radius: 100%;
+}
+
+.selected {
+    opacity: 0.7;
+    border: 5px solid white;
+}
